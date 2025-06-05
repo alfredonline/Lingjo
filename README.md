@@ -1,48 +1,24 @@
-# Astro Starter Kit: Basics
+# Lingjo
 
-```sh
-npm create astro@latest -- --template basics
-```
+**Lingjo** is a growing suite of web applications designed to support and inspire language learners. Each tool in the Lingjo ecosystem targets a different aspect of the learning process — from tracking progress to generating study content.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This site serves as the central hub for all Lingjo projects, offering descriptions, documentation, links, and updates for each app in the collection.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Whether you're a self-studier, a polyglot-in-training, or simply exploring new ways to learn a language, Lingjo provides practical, intelligent, and enjoyable tools to guide your journey.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+---
 
-## 🚀 Project Structure
+## 🧑‍🎓 LinguaTrackr
 
-Inside of your Astro project, you'll see the following folders and files:
+**LinguaTrackr** is the first app in the Lingjo suite — a study logger built specifically for language learners.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+With LinguaTrackr, you can:
+- Track every aspect of your study sessions
+- Set and measure goals
+- Maintain a streak
+- Visualise your study habits
+- Get personalised activity recommendations
+- And much more
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Ready to get started?  
+Sign up and begin logging your language journey at [**linguatrackr.com**](https://linguatrackr.com)
