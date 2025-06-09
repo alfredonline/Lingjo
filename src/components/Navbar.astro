@@ -4,33 +4,47 @@ import navigationItems from "../../constants/navigation";
 import { branding } from "../../constants/branding";
 ---
 
-<div class="container mx-auto px-4 md:px-16 lg:px-32 py-4">
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
-    <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg font-bold">
+<div class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
+  <div class="container mx-auto px-4 md:px-16 lg:px-32 py-4">
+    <header class="flex flex-col lg:flex-row justify-between items-center">
+      <Astronav>
+        <div class="flex w-full lg:w-auto items-center justify-between">
+          <a href="/" class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:from-purple-500 hover:via-pink-600 hover:to-red-600 transition-all duration-500 drop-shadow-lg">
             {branding.websiteName}
-        </a>
-        <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
+          </a>
+          <div class="block lg:hidden">
+            <MenuIcon class="w-8 h-8 text-white hover:text-pink-500 transition-colors duration-300" />
+          </div>
         </div>
-      </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          {
-            navigationItems.map((item) => (
-              <li>
-                <a
-                  href={item.path}
-                  class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
-                >
-                  <span> {item.title}</span>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </MenuItems>
-    </Astronav>
-  </header>
+        <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+          <ul class="flex flex-col lg:flex-row lg:gap-8">
+            {
+              navigationItems.map((item) => (
+                <li>
+                  <a
+                    href={item.path}
+                    class="flex lg:px-3 py-2 items-center text-gray-200 hover:text-white font-medium transition-all duration-300 relative group"
+                  >
+                    <span class="relative z-10">{item.title}</span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 group-hover:w-full transition-all duration-500"></span>
+                    <span class="absolute -inset-1 bg-gradient-to-r from-purple-500/0 via-pink-500/0 to-red-500/0 group-hover:from-purple-500/10 group-hover:via-pink-500/10 group-hover:to-red-500/10 rounded-lg transition-all duration-500"></span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </MenuItems>
+      </Astronav>
+    </header>
+  </div>
 </div>
+
+<style>
+  :global(.astro-navbar) {
+    width: 100%;
+  }
+
+  :global(.astro-navbar a) {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+</style>
